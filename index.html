@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Namis Ibrahim portfolio — Associate Systems Engineer and aspiring Cyber Security Analyst in Melbourne, Australia." />
+  <title>Namis Ibrahim | Systems Engineer & Cyber Security</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="profile.png" alt="Namis Ibrahim profile photo" class="avatar" />
+        <h1>Namis Ibrahim</h1>
+        <p class="role">Associate Systems Engineer</p>
+        <span class="status"><span class="dot"></span> Open to Work</span>
+      </div>
+      <div class="side-actions">
+        <a class="btn primary" href="mailto:namisibrahim85@gmail.com"><i class="fa-solid fa-envelope"></i>Email</a>
+        <a class="btn" href="#contact"><i class="fa-solid fa-paper-plane"></i>Contact</a>
+      </div>
+      <div class="meta">
+        <p><i class="fa-solid fa-location-dot"></i> Melbourne, Australia</p>
+        <p><i class="fa-solid fa-shield-halved"></i> Cyber Security & Wintel</p>
+        <p><i class="fa-solid fa-chart-line"></i> Visitors: <span id="counter">Loading...</span></p>
+      </div>
+      <nav class="nav" id="nav">
+        <a href="#about" class="active"><i class="fa-regular fa-user"></i>About</a>
+        <a href="#experience"><i class="fa-solid fa-briefcase"></i>Resume</a>
+        <a href="#projects"><i class="fa-solid fa-diagram-project"></i>Portfolio</a>
+        <a href="#education"><i class="fa-solid fa-graduation-cap"></i>Education</a>
+        <a href="#skills"><i class="fa-solid fa-layer-group"></i>Tech Stack</a>
+        <a href="#contact"><i class="fa-regular fa-message"></i>Contact</a>
+      </nav>
+    </aside>
+
+    <main>
+      <div class="topbar">
+        <button class="btn search-btn" id="openSearch"><i class="fa-solid fa-magnifying-glass"></i>Search portfolio <span class="kbd">Ctrl K</span></button>
+        <button class="btn" id="themeToggle"><i class="fa-solid fa-sun"></i><span>Light</span></button>
+      </div>
+
+      <section class="hero" id="about">
+        <span class="eyebrow">Systems Engineering · Cyber Security · Automation</span>
+        <h2>Building reliable Windows infrastructure with a security-first mindset.</h2>
+        <p>Aspiring Cyber Security Analyst with 3+ years in IT service management and hands-on experience in Wintel environments. Skilled in Active Directory, Azure AD, server patching, incident management, documentation, and vulnerability-focused operations.</p>
+        <div class="stats">
+          <div class="stat"><strong>3+</strong><span>Years IT experience</span></div>
+          <div class="stat"><strong>95%</strong><span>SLA resolution rate</span></div>
+          <div class="stat"><strong>200+</strong><span>Tickets weekly managed</span></div>
+          <div class="stat"><strong>4+</strong><span>Security projects</span></div>
+        </div>
+      </section>
+
+      <section id="doing">
+        <div class="section-head"><div><h3>What I'm Doing</h3><p>Focused areas across infrastructure, support operations and cyber security.</p></div></div>
+        <div class="grid services">
+          <article class="card"><i class="fa-brands fa-windows"></i><h4>Wintel Operations</h4><p>Monitoring, patching and maintaining Windows Server environments for availability and performance.</p></article>
+          <article class="card"><i class="fa-solid fa-user-shield"></i><h4>Identity & Access</h4><p>Managing users, groups, access controls and directory administration across AD and Azure AD.</p></article>
+          <article class="card"><i class="fa-solid fa-bug-slash"></i><h4>Security Operations</h4><p>Hands-on labs in SIEM, honeypots, SOAR workflows, incident response and threat analysis.</p></article>
+          <article class="card"><i class="fa-solid fa-robot"></i><h4>Automation</h4><p>Reducing repetitive work with PowerShell, Bash, runbooks, change logs and documentation.</p></article>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="section-head"><div><h3>Resume</h3><p>Professional experience and operational impact.</p></div></div>
+        <div class="timeline">
+          <article class="timeline-item"><div class="date">Mar 2026 — Present</div><div><h4>Associate Systems Engineer (Wintel) · Datacom Pty Ltd</h4><ul><li>Monitored and optimized Windows Server environments for availability and performance.</li><li>Managed Active Directory and Azure AD identities, access controls and provisioning.</li><li>Supported patching, backups, restoration, VMware, Hyper-V, DNS, DHCP and TCP/IP troubleshooting.</li><li>Created runbooks and automated routine tasks using PowerShell and Bash.</li></ul></div></article>
+          <article class="timeline-item"><div class="date">Jun 2024 — Feb 2026</div><div><h4>Senior Service Desk Analyst · Datacom Pty Ltd</h4><ul><li>Managed 200+ tickets weekly with a 95% SLA resolution rate.</li><li>Improved queue operations, reporting, knowledge articles and onboarding material.</li><li>Worked with Level 2 engineers to escalate, trend and convert recurring incidents into problem tickets.</li></ul></div></article>
+          <article class="timeline-item"><div class="date">Sep 2022 — May 2024</div><div><h4>Service Desk Analyst · Datacom Pty Ltd</h4><ul><li>Managed 150+ monthly ServiceNow tickets and maintained a 98% customer satisfaction rate.</li><li>Mentored 10+ new staff and contributed to cyber security awareness initiatives.</li></ul></div></article>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="section-head"><div><h3>Portfolio</h3><p>Security and infrastructure projects presented as recruiter-friendly cards.</p></div><div class="filters"><button class="btn filter active" data-filter="all">All</button><button class="btn filter" data-filter="security">Security</button><button class="btn filter" data-filter="cloud">Cloud</button><button class="btn filter" data-filter="automation">Automation</button></div></div>
+        <div class="project-grid">
+          <article class="project-card" data-category="security"><i class="fa-solid fa-chart-area"></i><h4>SIEM Lab</h4><p>Wazuh monitoring, alerting, event analysis and remediation workflows.</p><div class="chips"><span class="chip">Wazuh</span><span class="chip">SIEM</span><span class="chip">Threat Analysis</span></div></article>
+          <article class="project-card" data-category="cloud security"><i class="fa-brands fa-microsoft"></i><h4>Azure Honeypot</h4><p>Public Azure VM honeypot used to capture attacks, analyse IPs and identify threat patterns.</p><div class="chips"><span class="chip">Azure</span><span class="chip">Honeypot</span><span class="chip">Logs</span></div></article>
+          <article class="project-card" data-category="automation security"><i class="fa-solid fa-bolt"></i><h4>SOAR Workflow</h4><p>LimaCharlie and Tines automation for detection, Slack alerts and host isolation decisions.</p><div class="chips"><span class="chip">SOAR</span><span class="chip">EDR</span><span class="chip">Tines</span></div></article>
+        </div>
+      </section>
+
+      <section id="education">
+        <div class="section-head"><div><h3>Education & Certifications</h3><p>Formal study and industry credentials.</p></div></div>
+        <div class="grid">
+          <article class="card"><i class="fa-solid fa-building-columns"></i><h4>Master of Cyber Security · RMIT</h4><p>Part-time and ongoing. Focus areas include digital risk management, information security, quantitative risk analysis, Python data science and security control recommendations.</p></article>
+          <article class="card"><i class="fa-solid fa-certificate"></i><h4>CompTIA Security+ · Apr 2025</h4><p>Validated network security, threat detection, vulnerability management, incident response, cryptography and risk mitigation knowledge.</p></article>
+          <article class="card"><i class="fa-solid fa-shield-halved"></i><h4>ISC2 Certified in Cybersecurity · Dec 2024</h4><p>Core cybersecurity grounding in access control, security operations, risk management and security principles.</p></article>
+          <article class="card"><i class="fa-solid fa-network-wired"></i><h4>Certificate IV Cyber Security · Victoria University</h4><p>Designed a SOC lab with pfSense, Suricata, Splunk, log forwarding, dashboards and system hardening.</p></article>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="section-head"><div><h3>Tech Stack</h3><p>Tools and concepts used across systems engineering and cyber security labs.</p></div></div>
+        <div class="chips">
+          <span class="chip">Windows Server</span><span class="chip">Active Directory</span><span class="chip">Azure AD</span><span class="chip">BigFix</span><span class="chip">VMware</span><span class="chip">Hyper-V</span><span class="chip">PowerShell</span><span class="chip">Bash</span><span class="chip">ServiceNow</span><span class="chip">DNS</span><span class="chip">DHCP</span><span class="chip">TCP/IP</span><span class="chip">Wazuh</span><span class="chip">Splunk</span><span class="chip">pfSense</span><span class="chip">Suricata</span><span class="chip">Azure</span><span class="chip">LimaCharlie</span><span class="chip">Tines</span>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact-card">
+          <div><span class="eyebrow">Contact</span><h3>Interested in systems, security or support engineering roles.</h3><p>Based in Melbourne and open to opportunities involving Wintel, cyber security operations, cloud security labs, service improvement and automation.</p></div>
+          <div class="side-actions"><a class="btn primary" href="mailto:namisibrahim85@gmail.com">Email Me</a><a class="btn" href="#about">Back to Top</a></div>
+        </div>
+      </section>
+      <footer class="footer">© <span id="year"></span> Namis Ibrahim. Built with HTML, CSS and JavaScript.</footer>
+    </main>
+  </div>
+
+  <div class="modal" id="searchModal" aria-hidden="true">
+    <div class="palette"><input id="searchInput" placeholder="Search About, Resume, Projects, Education..." autocomplete="off" /><div class="results" id="results"></div></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
